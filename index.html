@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotions SVG</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: #39154a;
+      }
+
+      .wrapper {
+        width: 700px;
+      }
+
+      #center-round {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: rotate 6s linear infinite;
+      }
+
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      #sweat {
+        stroke-dasharray: 70px;
+      }
+
+      /* E 3 */
+
+      #e3 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutThree 5s ease infinite;
+      }
+
+      @keyframes inOutThree {
+        0% {
+          transform: translate(-200px, 200px);
+        }
+
+        10% {
+          transform: translate(0px, 0px);
+        }
+
+        20% {
+          transform: translate(-200px, 200px);
+        }
+
+        20%,
+        100% {
+          transform: translate(-200px, 200px);
+        }
+      }
+
+      #e3-border {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutThree 5s ease 0.05s infinite;
+      }
+      /* E 1 */
+
+      #e1 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutOne 5s ease infinite;
+      }
+
+      @keyframes inOutOne {
+        0%,
+        20% {
+          transform: translate(0px, -200px);
+        }
+
+        30% {
+          transform: translate(0px, 0px);
+        }
+
+        40% {
+          transform: translate(0px, -200px);
+        }
+
+        40%,
+        100% {
+          transform: translate(0px, -200px);
+        }
+      }
+
+      #e1-border {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutOne 5s ease 0.05s infinite;
+      }
+      /* E 4 */
+
+      #e4 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutFour 5s ease infinite;
+      }
+
+      @keyframes inOutFour {
+        0%,
+        40% {
+          transform: translate(200px, 200px);
+        }
+
+        50% {
+          transform: translate(0px, 0px);
+        }
+
+        60% {
+          transform: translate(200px, 200px);
+        }
+
+        100% {
+          transform: translate(200px, 200px);
+        }
+      }
+
+      #e4-border {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutFour 5s ease 0.05s infinite;
+      }
+      /* E 5 */
+
+      #e5 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutFive 5s ease infinite;
+      }
+
+      @keyframes inOutFive {
+        0%,
+        60% {
+          transform: translate(200px, -200px);
+        }
+
+        70% {
+          transform: translate(0px, 0px);
+        }
+
+        80% {
+          transform: translate(200px, -200px);
+        }
+
+        100% {
+          transform: translate(200px, -200px);
+        }
+      }
+
+      #e5-border {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutFive 5s ease 0.05s infinite;
+      }
+      /* E 2 */
+
+      #e2 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutTwo 5s ease infinite;
+      }
+
+      @keyframes inOutTwo {
+        0%,
+        80% {
+          transform: translate(-200px, -200px);
+        }
+
+        90% {
+          transform: translate(0px, 0px);
+        }
+
+        100% {
+          transform: translate(-200px, -200px);
+        }
+      }
+
+      #e2-border {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: inOutTwo 5s ease 0.05s infinite;
+      }
+
+      #dash1,
+      #dash2,
+      #dash3 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: dashFloat 6s ease alternate infinite;
+      }
+
+      #dash2 {
+        animation: dashFloat 6s ease 1s alternate infinite;
+      }
+
+      #dash3 {
+        animation: dashFloat 6s ease 2s alternate infinite;
+      }
+
+      @keyframes dashFloat {
+        0% {
+          transform: translate(0px, 0px);
+        }
+
+        20% {
+          transform: translate(50px, 20px);
+        }
+
+        40% {
+          transform: translate(-20px, 50px);
+        }
+
+        60% {
+          transform: translate(30px, 30px);
+        }
+
+        80% {
+          transform: translate(-30px, 40px);
+        }
+
+        100% {
+          transform: translate(50px, -30px);
+        }
+      }
+
+      #cross1,
+      #cross2,
+      #cross3,
+      #cross4 {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: crossInOut 6s ease alternate infinite;
+      }
+
+      #cross2 {
+        animation: crossInOut 6s ease 1s alternate infinite;
+      }
+
+      #cross3 {
+        animation: crossInOut 6s ease 2s alternate infinite;
+      }
+
+      #cross3 {
+        animation: crossInOut 6s ease 3s alternate infinite;
+      }
+
+      @keyframes crossInOut {
+        0% {
+          transform: translate(0px, 0px);
+        }
+
+        20% {
+          transform: translate(50px, -30px);
+        }
+
+        40% {
+          transform: translate(50px, 20px);
+        }
+
+        60% {
+          transform: translate(-20px, 50px);
+        }
+
+        80% {
+          transform: translate(30px, 30px);
+        }
+
+        100% {
+          transform: translate(-30px, 40px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <svg
+          width="100%"
+          min-height="0"
+          viewBox="0 0 1800 1800"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="emotions">
+            <path
+              id="center-round"
+              d="M1368.71 890.939C1368.71 1013.09 1318.62 1123.55 1237.86 1202.9M931.395 1328.25C1040.47 1328.25 1140.22 1288.31 1216.82 1222.27M494.085 890.939C494.085 764.862 547.438 651.245 632.799 571.437M772.622 1298.53C620.875 1239.38 510.292 1097.93 495.721 929.024M772.622 483.344C821.84 464.158 875.388 453.629 931.395 453.629C1035.71 453.629 1131.5 490.155 1206.66 551.115M1229.99 571.437C1309.03 645.334 1360.63 748.215 1367.84 863.136M703.195 517.818C705.008 516.707 706.831 515.608 708.661 514.522M852.298 1321.11C854.726 1321.56 857.161 1321.98 859.603 1322.38"
+              stroke="#9C3587"
+              stroke-width="16.82"
+              stroke-linecap="round"
+            />
+            <path
+              id="dash3"
+              d="M803.631 1505.4H766.542"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              id="dash2"
+              d="M1394.33 389.983H1344.88"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              id="dash1"
+              d="M377.508 304.423H328.057"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <g id="e2">
+              <path
+                id="Vector"
+                d="M598.238 795.142C598.238 859.069 546.415 910.892 482.488 910.892C418.562 910.892 366.74 859.069 366.74 795.142C366.74 731.215 418.562 679.392 482.488 679.392C546.415 679.392 598.238 731.215 598.238 795.142Z"
+                fill="#F89F5B"
+              />
+              <path
+                id="Vector_2"
+                d="M527.303 775.448L564.726 753.842"
+                stroke="#011E69"
+                stroke-width="21.022"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_3"
+                d="M462.401 775.448L424.977 753.842"
+                stroke="#011E69"
+                stroke-width="21.022"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_4"
+                d="M465.876 847.221C465.876 831.218 478.849 818.247 494.851 818.247C510.854 818.247 523.826 831.218 523.826 847.221"
+                stroke="#011E69"
+                stroke-width="21.022"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <path
+              id="e2-border"
+              d="M598.238 795.142C598.238 859.069 546.415 910.892 482.488 910.892C418.562 910.892 366.74 859.069 366.74 795.142C366.74 731.215 418.562 679.392 482.488 679.392C546.415 679.392 598.238 731.215 598.238 795.142Z"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <g id="e3">
+              <path
+                id="Vector_5"
+                d="M760.281 1254.93C760.281 1299.68 724.006 1335.95 679.259 1335.95C634.512 1335.95 598.237 1299.68 598.237 1254.93C598.237 1210.18 634.512 1173.91 679.259 1173.91C724.006 1173.91 760.281 1210.18 760.281 1254.93Z"
+                fill="#F89F5B"
+              />
+              <path
+                id="Vector_6"
+                d="M714.339 1237.43L740.533 1222.31"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_7"
+                d="M668.906 1237.43L642.71 1222.31"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_8"
+                d="M669.256 1277.53H713.988"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <path
+              id="e3-border"
+              d="M760.281 1254.93C760.281 1299.68 724.006 1335.95 679.259 1335.95C634.512 1335.95 598.237 1299.68 598.237 1254.93C598.237 1210.18 634.512 1173.91 679.259 1173.91C724.006 1173.91 760.281 1210.18 760.281 1254.93Z"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <g id="e4">
+              <path
+                id="Vector_9"
+                d="M1247.13 1283.87C1247.13 1347.8 1195.31 1399.62 1131.38 1399.62C1067.46 1399.62 1015.63 1347.8 1015.63 1283.87C1015.63 1219.94 1067.46 1168.12 1131.38 1168.12C1195.31 1168.12 1247.13 1219.94 1247.13 1283.87Z"
+                fill="#F89F5B"
+              />
+              <path
+                id="Vector_10"
+                d="M1176.2 1264.18L1213.62 1242.57"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_11"
+                d="M1111.29 1264.18L1073.87 1242.57"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_12"
+                d="M1114.77 1335.95C1114.77 1319.95 1127.74 1306.97 1143.75 1306.97C1159.75 1306.97 1172.72 1319.95 1172.72 1335.95"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <path
+              id="e4-border"
+              d="M1247.13 1283.87C1247.13 1347.8 1195.31 1399.62 1131.38 1399.62C1067.46 1399.62 1015.63 1347.8 1015.63 1283.87C1015.63 1219.94 1067.46 1168.12 1131.38 1168.12C1195.31 1168.12 1247.13 1219.94 1247.13 1283.87Z"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <g id="e5">
+              <path
+                id="Vector_13"
+                d="M1458.95 826.315C1458.95 875.661 1418.95 915.663 1369.6 915.663C1320.26 915.663 1280.25 875.661 1280.25 826.315C1280.25 776.969 1320.26 736.967 1369.6 736.967C1418.95 736.967 1458.95 776.969 1458.95 826.315Z"
+                fill="#F89F5B"
+              />
+              <path
+                id="Vector_14"
+                d="M1407.01 808.293L1435.9 791.615"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_15"
+                d="M1356.91 808.293L1328.03 791.615"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_16"
+                d="M1359.6 852.513H1404.33"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <path
+              id="e5-border"
+              d="M1458.95 826.315C1458.95 875.661 1418.95 915.663 1369.6 915.663C1320.26 915.663 1280.25 875.661 1280.25 826.315C1280.25 776.969 1320.26 736.967 1369.6 736.967C1418.95 736.967 1458.95 776.969 1458.95 826.315Z"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <g id="e1">
+              <path
+                id="Vector_17"
+                d="M1000.47 432.912C1000.47 482.258 960.469 522.26 911.124 522.26C861.778 522.26 821.776 482.258 821.776 432.912C821.776 383.566 861.778 343.564 911.124 343.564C960.469 343.564 1000.47 383.566 1000.47 432.912Z"
+                fill="#F89F5B"
+              />
+              <path
+                id="Vector_18"
+                d="M948.537 414.89L977.423 398.212"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_19"
+                d="M898.437 414.89L869.549 398.212"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_20"
+                d="M901.12 470.293C901.12 457.941 911.134 447.927 923.486 447.927C935.839 447.927 945.852 457.941 945.852 470.293"
+                stroke="#011E69"
+                stroke-width="16.817"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <path
+              id="e1-border"
+              d="M1000.47 432.912C1000.47 482.258 960.469 522.26 911.124 522.26C861.778 522.26 821.776 482.258 821.776 432.912C821.776 383.566 861.778 343.564 911.124 343.564C960.469 343.564 1000.47 383.566 1000.47 432.912Z"
+              stroke="#F5F5F5"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              id="Vector_21"
+              d="M906.548 679.424C807.142 677.523 725.776 760.783 725.776 860.207V1001.16C725.776 1009.51 732.55 1016.29 740.906 1016.29H799.301C807.658 1016.29 814.431 1023.06 814.431 1031.42V1107.54C814.431 1115.9 821.206 1122.67 829.563 1122.67H1065.27C1073.63 1122.67 1080.4 1115.9 1080.4 1107.54V856.705C1080.4 759.932 1002.88 681.267 906.548 679.424V679.424Z"
+              fill="#F89F5B"
+            />
+            <path
+              id="Vector_22"
+              d="M817.196 1043.1C841.2 1043.1 860.658 1062.56 860.658 1086.56"
+              stroke="#011E69"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              id="Vector_23"
+              d="M834.703 901.014C834.703 925.018 854.162 944.478 878.166 944.478C894.225 944.478 908.251 935.767 915.775 922.813L915.766 922.746L834.703 901.014Z"
+              fill="#F5F5F5"
+            />
+            <path
+              id="Vector_24"
+              d="M941.852 929.348L817.552 896.027V870.178"
+              stroke="#011E69"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+
+            <path
+              id="eyeliner"
+              d="M836.25 910.5C837.5 923.5 848.5 939.75 869.25 943.25"
+              stroke="transparent"
+            />
+
+            <circle id="circle_eye" cx="0" cy="0" r="10.624" fill="#011E69" />
+
+            <path
+              id="Vector_26"
+              d="M1146.08 898.363C1146.08 928.168 1121.92 952.331 1092.12 952.331C1062.31 952.331 1038.15 928.168 1038.15 898.363C1038.15 868.557 1092.12 782.583 1092.12 782.583C1092.12 782.583 1146.08 868.557 1146.08 898.363Z"
+              fill="#F5F5F5"
+            />
+            <path
+              id="sweat"
+              d="M1092.12 937.496C1070.54 937.496 1052.98 919.942 1052.98 898.363C1052.98 884.023 1073.07 844.11 1092.12 811.316"
+              stroke="#F89F5B"
+              stroke-width="16.817"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <g id="cross2">
+              <path
+                id="Vector_27"
+                d="M240.957 1085.38L278.895 1123.31"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_28"
+                d="M278.896 1085.38L240.958 1123.31"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <g id="cross3">
+              <path
+                id="Vector_29"
+                d="M970.882 1431.05L989.85 1450.02"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_30"
+                d="M989.85 1431.05L970.88 1450.02"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <g id="cross4">
+              <path
+                id="Vector_31"
+                d="M1466.03 939.341L1503.96 977.279"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_32"
+                d="M1503.96 939.341L1466.03 977.279"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <g id="cross1">
+              <path
+                id="Vector_33"
+                d="M701.054 379.848L720.022 398.818"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_34"
+                d="M720.022 379.848L701.052 398.818"
+                stroke="#9C3587"
+                stroke-width="16.79"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+          </g>
+
+          <animateMotion href="#circle_eye" repeatCount="indefinite" dur="5s">
+            <mpath href="#eyeliner" />
+          </animateMotion>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
